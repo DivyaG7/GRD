@@ -1,0 +1,8 @@
+.container {
+  width: 100vw;
+  height: 90vh;
+}
+.contentbuzz {
+  background:  lightgray 50% / cover no-repeat;
+  height: 100%;
+}

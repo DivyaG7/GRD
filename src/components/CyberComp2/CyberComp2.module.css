@@ -1,0 +1,51 @@
+.container {
+  width: 100vw;
+  min-height: 120vh;
+
+  background: url("./assets/cybercompimg2.png"), lightgray 50% / cover no-repeat;
+  mix-blend-mode: exclusion;
+}
+
+.content {
+  position: relative;
+  top: 40px;
+  left: 40px;
+}
+
+.content h3 {
+  color: #fff;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.content h3 span {
+  color: #d4af37;
+  font-family: Poppins;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .container{
+    min-height: 130vh;
+  }
+
+  .content {
+    left: 50px;
+  }
+
+  .content h3 {
+    font-size: 29px;
+    margin-bottom: 50px;
+  }
+  
+  .content h3 span {
+    font-size: 29px;
+  }
+}

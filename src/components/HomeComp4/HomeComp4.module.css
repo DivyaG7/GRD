@@ -1,0 +1,87 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./assets/Rectangle 67.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.mainContain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.testimonialContain {
+  height: 70%;
+  width: 100vw;
+  margin-left: 20%;
+  background: rgba(255, 248, 231, 0.39);
+  overflow: hidden;
+}
+
+.symbolTest {
+  position: absolute;
+  top: 80px;
+  left: 240px;
+}
+.doublquoteMain {
+  position: absolute;
+  top: 90px;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  font-family: Century Gothic;
+  font-size: 180px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200px;
+}
+.title{
+  position: absolute;
+  top: 380px;
+  left: 160px;
+  transform: rotate(-90deg);
+  color: rgba(255, 255, 255, 0.50);
+  text-align: center;
+  font-family: Bungee;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 6px;
+}
+
+.carcarousel{
+  position: absolute;
+  overflow: hidden;
+  left: 450px;
+  top: 160px;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .title{
+    top: 330px;
+    left: 200px;
+    font-size: 24px;
+  }
+
+  .symbolTest{
+    top: 50px;
+    left: 230px;
+  }
+
+  .doublquoteMain{
+    top: 70px;
+  }
+
+  .carcarousel{
+    position: absolute;
+    overflow: hidden;
+    left: 400px;
+    top: 95px;
+    background-color: transparent;
+  }
+}

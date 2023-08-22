@@ -1,0 +1,13 @@
+.scroller {
+  height: 95px;
+  background: linear-gradient(180deg, #FFF8E7 0%, rgba(247, 250, 251, 1) 100%);
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px){
+  .scroller{
+    height: 90px;
+    margin-top: -3px;
+  }
+}

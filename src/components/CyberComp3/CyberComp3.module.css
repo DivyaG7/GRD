@@ -1,0 +1,103 @@
+.container {
+  width: 100vw;
+  height: 60vw;
+  background-image: url("./assets/cyberthirdimg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.container .content {
+  width: 50%;
+  position: relative;
+  left: 60px;
+}
+.cyber {
+  color: #d4af37;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.service {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.content1 {
+  position: relative;
+  left: 160px;
+}
+.content11 {
+  padding: 30px;
+  width: 40%;
+  border-radius: 22px;
+  background: #fff;
+}
+.content11 ul{
+  position: relative;
+  left: 35px;
+}
+.content12{
+  position: absolute;
+  top: 0;
+  left: 40%;
+}
+.content12 h3, .content12 ul{
+  color: #fff;
+}
+.content12 ul{
+  position: relative;
+  left: 35px;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  .container {
+    height: 50vw;
+  }
+
+  .container .content {
+    width: 60%;
+    left: 50px;
+    top: 50px;
+  }
+
+  .cyber, .service {
+    font-size: 50px;
+  }
+
+  .content1 {
+    left: 350px;
+  }
+
+  .content11 {
+    width: 25%;
+    padding: 50px;
+  }
+
+  .content11 ul {
+    left: 30px;
+  }
+
+  .content12 {
+    left: 35%;
+  }
+
+  .content12 img{
+    width: 68%;
+  }
+
+  .content12 h3, .content12 ul {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .content12 ul {
+    left: 45px;
+  }
+}
+

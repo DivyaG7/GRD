@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+:root {
+  --up: 3;
+  --card-margin: 8px;
+  --card-shadow: rgba(46, 49, 52, 0.4);
+  --color-white: #fff;
+  --color-lightgrey: #ccc;
+  --color-ui: #999;
+  --color-ui-hover: #666;
+  --cardWidth: calc(86vw / var(--up));
+  --carouselWidth: calc(var(--cardWidth) * var(--num));
+  --carouselLeftMargin: calc(29vw - var(--cardWidth));
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --up: 1;
+  }
+}
+
+.carouselwrapper {
+  display: flex;
+  background: var(--color-shadow);
+  height: 550px;
+  flex-wrap: nowrap;
+  position: relative;
+  top: 30px;
+  left: 100px;
+  overflow: hidden;
+  border-radius: 38px 0px 0px 38px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: aliceblue;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.carousel {
+  width: var(--carouselWidth);
+  margin: 40px 0 40px 0;
+  height: 550px;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+}
+
+.carousel.prev {
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-name: prev;
+}
+
+.carousel.next {
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.83, 0, 0.17, 1);
+  animation-name: next;
+}
+
+.carousel li {
+
+  width: calc(var(--cardWidth) - var(--card-margin) * 2);
+  box-sizing: border-box;
+}
+
+.ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--card-margin);
+  z-index: 100;
+}
+
+.ui button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ui);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-white);
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.25);
+  border: 0;
+  transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+  margin-bottom: 10px;
+}
+
+.ui button:hover {
+  background: var(--color-ui-hover);
+}
+
+.ui button:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card {
+  box-shadow: 0px 1px 2px 0px var(--card-shadow);
+  border-radius: 4px;
+  margin: var(--card-margin);
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.card .material-icons {
+  font-size: 3.8rem;
+}
+.card p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+.disc ul{
+  display: inline-flex;
+}
+.disc li {
+  padding: 3px 35px;
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carddic h3 {
+  height: 40px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.disc {
+  list-style-position: inside;
+  text-align: left;
+}
+.yellow-bg {
+  height: 100%;
+  background-color: #FCB401; 
+}
+
+.white-bg {
+  height: 100%;
+  background-color: white;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1400px) {
+  :root {
+    --up: 4;
+  }
+
+  .carouselwrapper {
+    height: 500px;
+  }
+
+  .carousel {
+    height: 500px;
+  }
+  .card {
+    margin: var(--card-margin);
+    background: var(--color-white);
+    overflow: hidden;
+    
+  }
+}
+
+
+@keyframes next {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px + var(--cardWidth)));
+  }
+}
+
+@keyframes prev {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(0px - var(--cardWidth)));
+  }
+}
